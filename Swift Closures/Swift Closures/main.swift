@@ -58,4 +58,6 @@ print(calculator(n1: 2, n2: 3, operation: { $0 + $1 }))
 
 //  FOURTH WAY:
 //  We can abbreviate even further by using a trailing closure.
+//  This syntax can be used when the last parameter is defined as
+//  closure.
 print(calculator(n1: 2, n2: 3) { $0 + $1 })
