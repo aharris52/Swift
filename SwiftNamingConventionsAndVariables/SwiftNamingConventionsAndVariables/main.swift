@@ -38,6 +38,14 @@ print("")
 /*  Challenge:
    swap the variables so that the values are reversed
  W/O typing a single number
+ 
+ If we were to declare these using the let keyword we
+ will get an error:
+ let a = 5
+ let b = 3   *** THIS WILL NOT COMPILE ***
+ let c = a
+ a = b
+ b = c
  **/
 var a = 5
 var b = 3
