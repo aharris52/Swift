@@ -1,4 +1,4 @@
-/*
+ /*
  @author: Andrew Harris
  @date: 23 Feb 2021
  @version: 1.0
@@ -24,9 +24,9 @@
  myOptional01 = nil
  let text01: String = myOptional01!
  */
-
-
 print("Swift has some great ways to deal with optionals.")
+print("Optionals are a safeguard against nil values")
+print("crashing our programs at run-time.")
 print("")
 print("**************************************************")
 print("")
