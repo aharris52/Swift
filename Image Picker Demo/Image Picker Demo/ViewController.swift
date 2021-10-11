@@ -26,10 +26,14 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: - Image Picker Delegate
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         print("\(info)")
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+            imageView.image = image
+        }
         picker.dismiss(animated: true, completion: nil)
     }
     
