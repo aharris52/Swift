@@ -17,7 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2z-bB-fII">
-                                <rect key="frame" x="20" y="811" width="374" height="31"/>
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9C2-4F-Sme"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Pick Photo"/>
                                 <connections>
@@ -25,21 +28,36 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lWU-lc-JHr">
-                                <rect key="frame" x="20" y="64" width="374" height="727"/>
+                                <rect key="frame" x="20" y="64" width="374" height="658"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yie-6y-sv1">
+                                <rect key="frame" x="20" y="742" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pRu-Z7-daX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scan Barcode">
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q2z-bB-fII" secondAttribute="bottom" constant="20" id="1BZ-2d-csz"/>
-                            <constraint firstItem="lWU-lc-JHr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1CX-gG-3TY"/>
-                            <constraint firstItem="Q2z-bB-fII" firstAttribute="top" secondItem="lWU-lc-JHr" secondAttribute="bottom" constant="20" id="2vX-Pw-1Vv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lWU-lc-JHr" secondAttribute="trailing" constant="20" id="ARu-KK-rgJ"/>
-                            <constraint firstItem="lWU-lc-JHr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JMo-qT-mhg"/>
-                            <constraint firstItem="Q2z-bB-fII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MWK-4b-Tww"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q2z-bB-fII" secondAttribute="trailing" constant="20" id="Mzp-k1-BWJ"/>
-                            <constraint firstItem="Q2z-bB-fII" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qye-Dj-622"/>
-                            <constraint firstItem="lWU-lc-JHr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x5z-vD-wct"/>
+                            <constraint firstItem="Q2z-bB-fII" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Cj-Vt-2KZ"/>
+                            <constraint firstItem="Yie-6y-sv1" firstAttribute="top" secondItem="lWU-lc-JHr" secondAttribute="bottom" constant="20" id="BkB-eW-RQ0"/>
+                            <constraint firstItem="Q2z-bB-fII" firstAttribute="top" secondItem="Yie-6y-sv1" secondAttribute="bottom" constant="20" id="Djg-h5-5iO"/>
+                            <constraint firstItem="Yie-6y-sv1" firstAttribute="top" secondItem="lWU-lc-JHr" secondAttribute="bottom" constant="20" id="HJ1-FE-d1k"/>
+                            <constraint firstItem="Yie-6y-sv1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HRX-iL-80g"/>
+                            <constraint firstItem="Q2z-bB-fII" firstAttribute="top" secondItem="Yie-6y-sv1" secondAttribute="bottom" constant="20" id="JCU-KG-8Uk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q2z-bB-fII" secondAttribute="bottom" constant="20" id="S9X-3z-Yep"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yie-6y-sv1" secondAttribute="trailing" constant="20" id="ThS-V2-3kd"/>
+                            <constraint firstItem="Q2z-bB-fII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c9q-iq-Tfj"/>
+                            <constraint firstItem="Yie-6y-sv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3N-5C-ViG"/>
+                            <constraint firstItem="lWU-lc-JHr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ljh-75-Klm"/>
+                            <constraint firstItem="lWU-lc-JHr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pQE-oT-IGs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q2z-bB-fII" secondAttribute="trailing" constant="20" id="zEs-dl-Rwv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lWU-lc-JHr" secondAttribute="trailing" constant="20" id="zIH-gY-MPk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -54,6 +72,9 @@
     <resources>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
