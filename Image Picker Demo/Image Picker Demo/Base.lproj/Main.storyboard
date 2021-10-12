@@ -39,6 +39,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Scan Barcode">
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="scanImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMq-rN-ozs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
