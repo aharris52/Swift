@@ -29,3 +29,17 @@ func greeting(name: String) {
     print("Hello \(name)")
 }
 greeting(name: "Bro Montana")
+
+func greeting02(name: String) -> Bool {
+    if name == "Bro Montana" || name == "Broseph Smith" {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+var test1 = greeting02(name: "Broseph Smith")
+var test2 = greeting02(name: "Your Mom")
+print(test1)
+print(test2)
