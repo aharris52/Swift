@@ -24,12 +24,18 @@ func meaningOfLife() {
 }
 meaningOfLife()
 
-
+// Here we require the use of parameters to perfom the
+// operation of this method. Notice, we don't provide a
+// return type in the method header.
 func greeting(name: String) {
     print("Hello \(name)")
 }
 greeting(name: "Bro Montana")
 
+// This is the most verbose method declaration.
+// We are processing input data with some decision
+// logic. And producing an output for use by the
+// program.
 func greeting02(name: String) -> Bool {
     if name == "Bro Montana" || name == "Broseph Smith" {
         return true
