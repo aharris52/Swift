@@ -48,10 +48,17 @@ struct NewTown {
     var citizens: [String]
     var resources: [String: Int]
     
+    // We we use the self annotation to make it clear which
+    // object is being referred to.
     init(townName: String, people: [String], stats: [String: Int]) {
-        name = townName
-        citizens = people
-        resources = stats
+        self.name = townName
+        self.citizens = people
+        self.resources = stats
+    }
+    
+    // Behavior
+    func film() {
+        print("Same-same, but different.")
     }
 }
 
@@ -62,3 +69,10 @@ print("\(myTown.name) has \(myTown.resources["followers"]!) followers.")
 myTown.citizens.append("Denise")
 print(myTown.citizens.count)
 myTown.film()
+
+var newTown = NewTown(townName: "Ridgemont", people: ["Linda"], stats: ["pizzas": 10])
+newTown.film()
+print(newTown.name)
+print(newTown.citizens)
+newTown.citizens.append("Spicoli")
+print(newTown.citizens)
