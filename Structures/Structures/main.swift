@@ -24,7 +24,9 @@
 //    to adopt behavior by sharing implementations.
 //    Composition over Inheritance
 // 5) See item 1
-
+//
+//
+// Immutability is briefly covered.
 import Foundation
 
 // This struct is very rigid, and would
@@ -42,7 +44,8 @@ struct Town {
     }
 }
 
-
+// Here we have a struct that is far more flexible
+// and extensible.
 struct NewTown {
     let name: String
     var citizens: [String]
@@ -60,6 +63,13 @@ struct NewTown {
     func film() {
         print("Same-same, but different.")
     }
+    
+    // In order to mutate a property from within a
+    // struct you need the "mutating" keyword.
+    mutating func addResources() {
+        resources["tasty waves"] = 10
+    }
+    
 }
 
 var myTown = Town()
@@ -76,3 +86,7 @@ print(newTown.name)
 print(newTown.citizens)
 newTown.citizens.append("Spicoli")
 print(newTown.citizens)
+newTown.addResources()
+print(newTown.resources)
+newTown.addResources()
+print(newTown.resources)
